@@ -37,7 +37,7 @@ jobs:
       run: yarn build
         
     - name: Install Surge
-      run: npm install --globally surge
+      run: npm install --global surge
         
     - name: Run Surge
       run: surge .build/ campapp.surge.sh --token ${{secrets.surge_token}}
